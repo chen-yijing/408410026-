@@ -1,0 +1,23 @@
+#include<stdio.h>  
+  
+int main(){  
+      
+    int a, b, t;  
+    while(scanf("%d %d",&a,&b)!=EOF){  
+        if(b>a){  
+            int tmp = a;  
+            a=b;  
+            b=tmp;  
+        }  
+        while(a>b){  
+            while(b!=0){  
+                t = b;  
+                b = a%b;  
+                a = t;  
+            }  
+            printf("%d\n",a);  
+            break;  
+        }  
+    }  
+    return 0;  
+}  
