@@ -1,0 +1,14 @@
+#include<stdio.h>  
+  
+int main(){  
+    int input,check;  
+    while(scanf("%d",&input)!=EOF){  
+        check = 0;  
+        for(int i=2;i<=input/2;i++){  
+            if(input%i==0){  
+                printf("NO\n");   check=1;  break;  
+            }  
+        }  
+        if(check==0)    printf("YES\n");  
+    }  
+}  
