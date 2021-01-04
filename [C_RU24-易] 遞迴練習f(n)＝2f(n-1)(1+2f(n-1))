@@ -1,0 +1,20 @@
+#include<stdio.h>  
+// #include<string.h>  
+  
+double f(double a)    
+{    
+    if(a==1)    
+        return 2;    
+    else    
+        return (2*f(a-1))/(1+2*f(a-1));    
+}    
+  
+int main(){  
+    double num;  
+    while(scanf("%lf",&num)!=EOF){  
+        printf("%.5f\n",f(num));  
+        // printf("%.5f\n",(f(num)*100000+0.5)/100000);  
+    }  
+    // printf("%d\n",func(num));  
+      
+}  
